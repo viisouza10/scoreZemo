@@ -13,6 +13,8 @@ import FirstItem from "./FirstItem";
 import styles from "./styles";
 import { colors } from "~/styles";
 
+import api from "~/services/api";
+
 export default class Main extends Component {
   state = {
     data: [],
@@ -25,17 +27,8 @@ export default class Main extends Component {
   }
 
   getScore = async () => {
-    const data = [
-      { id: 1, posicao: 1, score: 10, name: "Vinicius " },
-      { id: 2, posicao: 2, score: 220, name: "Filipi Souza" },
-      { id: 3, posicao: 3, score: 30, name: "Matheus Souza" },
-      { id: 4, posicao: 4, score: 10, name: "Vinicius " },
-      { id: 5, posicao: 5, score: 220, name: "Filipi Souza" },
-      { id: 6, posicao: 6, score: 30, name: "Matheus Souza" },
-      { id: 7, posicao: 7, score: 30, name: "Matheus Souza" },
-      { id: 8, posicao: 8, score: 30, name: "Matheus Souza" }
-    ];
-
+    let { data } = await api.get(`/GetUserScoreTrello`);
+    data = data.data;
     this.setState({ data, loading: false, refreshing: false });
   };
 
@@ -43,6 +36,7 @@ export default class Main extends Component {
 
   renderList = () => {
     const { data, refreshing } = this.state;
+    console.tron.log(data);
     const first = data.shift();
     return (
       <View>

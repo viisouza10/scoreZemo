@@ -5,11 +5,11 @@ import styles from "./styles";
 
 const firstItem = ({ user }) => (
   <View style={styles.container}>
-    {<Text style={styles.name}>{user.name}</Text>}
+    {<Text style={styles.name}>{user.nome}</Text>}
     <View sytle={styles.box_avatar}>
       <Image
         source={{
-          uri: `https://api.adorable.io/avatars/285/${user.name}`
+          uri: `https://github.com/${user.github}.png?size=300`
         }}
         style={styles.avatar}
       />
