@@ -2,6 +2,7 @@ import { StyleSheet, Dimensions } from "react-native";
 import { colors, metrics } from "~/styles";
 const height = Dimensions.get("window").height;
 const width = Dimensions.get("window").width;
+import { getStatusBarHeight } from "react-native-status-bar-height";
 const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.secundary,
@@ -11,7 +12,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderBottomLeftRadius: 300,
     borderBottomRightRadius: 300,
-    overflow: "hidden"
+    overflow: "hidden",
+    paddingTop: getStatusBarHeight()
   },
   name: {
     fontSize: 25,
@@ -39,7 +41,8 @@ const styles = StyleSheet.create({
   },
   avatar: {
     width: 200,
-    height: 200
+    height: 200,
+    borderRadius: 100
   }
 });
 

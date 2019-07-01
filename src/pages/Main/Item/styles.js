@@ -19,7 +19,8 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
     backgroundColor: colors.transparent,
-    marginRight: metrics.baseMargin
+    marginRight: metrics.baseMargin,
+    borderRadius: 25
   },
   name: { color: colors.white, fontSize: 20, width: 200 },
   score: { color: colors.white, fontSize: 20, width: 50, textAlign: "right" }

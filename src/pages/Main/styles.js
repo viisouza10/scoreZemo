@@ -10,8 +10,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     flexDirection: "column",
-    height: 54 + getStatusBarHeight(),
-    paddingTop: getStatusBarHeight()
+    height: 54 + getStatusBarHeight()
+    // paddingTop: getStatusBarHeight()
   },
   ranking: {
     // paddingTop: height / 2,

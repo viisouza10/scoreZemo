@@ -11,6 +11,7 @@ import Item from "./Item";
 import FirstItem from "./FirstItem";
 
 import styles from "./styles";
+import { colors } from "~/styles";
 
 export default class Main extends Component {
   state = {
@@ -45,6 +46,11 @@ export default class Main extends Component {
     const first = data.shift();
     return (
       <View>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor={colors.secundary}
+          translucent
+        />
         <FirstItem user={first} />
         <FlatList
           data={data}
@@ -62,7 +68,6 @@ export default class Main extends Component {
     const { loading } = this.state;
     return (
       <View style={styles.container}>
-        <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
         {loading ? (
           <ActivityIndicator style={styles.loading} />
         ) : (

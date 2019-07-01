@@ -9,7 +9,7 @@ const firstItem = ({ user }) => (
     <View sytle={styles.box_avatar}>
       <Image
         source={{
-          uri: "http://www.sclance.com/pngs/png-avatar/png_avatar_1049041.png"
+          uri: `https://api.adorable.io/avatars/285/${user.name}`
         }}
         style={styles.avatar}
       />
