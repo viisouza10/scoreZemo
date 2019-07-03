@@ -129,9 +129,21 @@ android {
         }
     }
     buildTypes {
+        debug{
+          buildConfigField "String","CODEPUSH_KEY",'""'
+        }
+
+        releaseStaging{
+          buildConfigField "String","CODEPUSH_KEY",'"qN3_DVc8622iHePEhKqAb8nVzdZyr1eX7G9eB"'
+
+          matchingFallbacks = ["debug","release"]
+        }
+
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+
+            buildConfigField "String","CODEPUSH_KEY",'"q2qbWiU3lO4hwGdtT4MHhcTBnJO4HylXmG9gS"'
         }
     }
     // applicationVariants are e.g. debug, release
