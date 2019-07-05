@@ -120,6 +120,16 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    signingConfigs {
+      release {
+        if (project.hasProperty('MYAPP_RELEASE_STORE_FILE')) {
+          storeFile file(MYAPP_RELEASE_STORE_FILE)
+          storePassword MYAPP_RELEASE_STORE_PASSWORD
+          keyAlias MYAPP_RELEASE_KEY_ALIAS
+          keyPassword MYAPP_RELEASE_KEY_PASSWORD
+        }
+      }
+    }
     splits {
         abi {
             reset()
@@ -128,6 +138,7 @@ android {
             include "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
         }
     }
+
     buildTypes {
         debug{
           buildConfigField "String","CODEPUSH_KEY",'""'
@@ -142,8 +153,7 @@ android {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-
-            buildConfigField "String","CODEPUSH_KEY",'"q2qbWiU3lO4hwGdtT4MHhcTBnJO4HylXmG9gS"'
+            signingConfig signingConfigs.release
         }
     }
     // applicationVariants are e.g. debug, release

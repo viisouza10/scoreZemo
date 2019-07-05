@@ -24,11 +24,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		63B022CFD90E43D0B4C231B4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D978B6EFC1A45A8BC8029A0 /* libz.tbd */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		88E1CD7735C44B0D9D7B02E3 /* libRCTOneSignal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D6F2B2D27C4C81BE84D137 /* libRCTOneSignal.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		DFA9D85D93734B9D9BBC770E /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF46A2A6052D4C03AEC8B429 /* libCodePush.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -264,27 +261,6 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
-		8EB9F17022CCC2A20052F5B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7C13A303F5C941A98B64FAAD /* CodePush.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 134814201AA4EA6300B7C361;
-			remoteInfo = CodePush;
-		};
-		8EB9F17222CCC2A20052F5B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7C13A303F5C941A98B64FAAD /* CodePush.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F886647B1F4ADB500036D01B;
-			remoteInfo = "CodePush-tvOS";
-		};
-		8EB9F1AE22CCC46C0052F5B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29BCF6C30D0F41FF8EF25701 /* RCTOneSignal.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3245CDED1BFEE35C00EABF68;
-			remoteInfo = RCTOneSignal;
-		};
 		8EFF891A22C9A344007A9F12 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
@@ -358,7 +334,6 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = scoreZemo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = scoreZemo/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		29BCF6C30D0F41FF8EF25701 /* RCTOneSignal.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTOneSignal.xcodeproj; path = "../node_modules/react-native-onesignal/ios/RCTOneSignal.xcodeproj"; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		65D6F2B2D27C4C81BE84D137 /* libRCTOneSignal.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTOneSignal.a; sourceTree = "<group>"; };
@@ -400,9 +375,6 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				0D3CDD331C5E42BAAFD9E4C9 /* libRNGestureHandler.a in Frameworks */,
-				DFA9D85D93734B9D9BBC770E /* libCodePush.a in Frameworks */,
-				63B022CFD90E43D0B4C231B4 /* libz.tbd in Frameworks */,
-				88E1CD7735C44B0D9D7B02E3 /* libRCTOneSignal.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +543,6 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				09E39166EB02427CA6D7B58E /* RNGestureHandler.xcodeproj */,
 				7C13A303F5C941A98B64FAAD /* CodePush.xcodeproj */,
-				29BCF6C30D0F41FF8EF25701 /* RCTOneSignal.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -609,20 +580,8 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8EB9F16C22CCC2A20052F5B4 /* Products */ = {
+		8E75DD8422CF73320085B99D /* Products */ = {
 			isa = PBXGroup;
-			children = (
-				8EB9F17122CCC2A20052F5B4 /* libCodePush.a */,
-				8EB9F17322CCC2A20052F5B4 /* libCodePush.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		8EB9F1AB22CCC46C0052F5B4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8EB9F1AF22CCC46C0052F5B4 /* libRCTOneSignal.a */,
-			);
 			name = Products;
 			sourceTree = "<group>";
 		};
@@ -708,7 +667,12 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 8HLJA2H353;
+						DevelopmentTeam = 5732856BHD;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -726,7 +690,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 8EB9F16C22CCC2A20052F5B4 /* Products */;
+					ProductGroup = 8E75DD8422CF73320085B99D /* Products */;
 					ProjectRef = 7C13A303F5C941A98B64FAAD /* CodePush.xcodeproj */;
 				},
 				{
@@ -756,10 +720,6 @@
 				{
 					ProductGroup = 00C302D41ABCB9D200DB3ED1 /* Products */;
 					ProjectRef = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
-				},
-				{
-					ProductGroup = 8EB9F1AB22CCC46C0052F5B4 /* Products */;
-					ProjectRef = 29BCF6C30D0F41FF8EF25701 /* RCTOneSignal.xcodeproj */;
 				},
 				{
 					ProductGroup = 139105B71AF99BAD00B5F7CC /* Products */;
@@ -1019,27 +979,6 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8EB9F17122CCC2A20052F5B4 /* libCodePush.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libCodePush.a;
-			remoteRef = 8EB9F17022CCC2A20052F5B4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8EB9F17322CCC2A20052F5B4 /* libCodePush.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libCodePush.a;
-			remoteRef = 8EB9F17222CCC2A20052F5B4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8EB9F1AF22CCC46C0052F5B4 /* libRCTOneSignal.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRCTOneSignal.a;
-			remoteRef = 8EB9F1AE22CCC46C0052F5B4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		8EFF891B22C9A344007A9F12 /* libjsi.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1239,7 +1178,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 8HLJA2H353;
+				DEVELOPMENT_TEAM = 5732856BHD;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
@@ -1253,7 +1192,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.zemopay.scoreZemo;
 				PRODUCT_NAME = scoreZemo;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1264,7 +1203,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8HLJA2H353;
+				DEVELOPMENT_TEAM = 5732856BHD;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
@@ -1278,7 +1217,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.zemopay.scoreZemo;
 				PRODUCT_NAME = scoreZemo;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1385,6 +1324,13 @@
 			};
 			name = Release;
 		};
+		8E75DD8622CF73320085B99D /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Hello World";
+			};
+			name = Staging;
+		};
 		8EB9F1B022CCCD3C0052F5B4 /* Staging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1430,31 +1376,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Staging;
-		};
-		8EB9F1B122CCCD3C0052F5B4 /* Staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8HLJA2H353;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
-					"$(SRCROOT)/../node_modules/react-native-code-push/ios/CodePush/**",
-					"$(SRCROOT)/../node_modules/react-native-onesignal/ios/**",
-				);
-				INFOPLIST_FILE = scoreZemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = scoreZemo;
-				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Staging;
 		};
@@ -1507,7 +1428,7 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
-				8EB9F1B122CCCD3C0052F5B4 /* Staging */,
+				8E75DD8622CF73320085B99D /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
