@@ -1,7 +1,7 @@
 import { StyleSheet, Dimensions } from "react-native";
 import { getStatusBarHeight } from "react-native-status-bar-height";
 import { colors, metrics } from "~/styles";
-const height = Dimensions.get("window").height;
+const { width, height } = Dimensions.get("window");
 
 const styles = StyleSheet.create({
   container: {
@@ -11,11 +11,6 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     flexDirection: "column",
     height: 54 + getStatusBarHeight()
-    // paddingTop: getStatusBarHeight()
-  },
-  ranking: {
-    // paddingTop: height / 2,
-    // zIndex: -1
   },
   loading: {
     marginTop: metrics.baseMargin * 2
