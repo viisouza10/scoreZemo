@@ -36,7 +36,6 @@ export default class Main extends Component {
 
   renderList = () => {
     const { data, refreshing } = this.state;
-    console.tron.log(data);
     const first = data.shift();
     return (
       <View>
